@@ -14,6 +14,8 @@ from datetime import datetime
 from discord.ext import commands, tasks
 from scratchclient import ScratchSession
 
+token = os.environ['token']
+
 from keep_alive import keep_alive
 
 keep_alive()
@@ -1409,4 +1411,4 @@ async def help(ctx, arg=None):
                               color=color)
 
 
-bot.run("OTExOTU4NTA1Nzk4Mzk3OTcz.YZo9iw.8ijtONIA8_QClbONQUzB6JFDmLU")
+bot.run(token)
